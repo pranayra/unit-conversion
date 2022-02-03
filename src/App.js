@@ -9,7 +9,7 @@ function App() {
   const [targetUnit, setTargetUnit] = useState('Celsius');
   const [studentResponse, setStudentResponse] = useState(null);
 
-  const inputValues = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "liters", "tablespoons", "cubic-inches", "cups", "cubic-feet", "gallons"]
+  const inputValues = ["Kelvin", "Celsius", "Fahrenheit", "Rankine", "liters", "tablespoons", "cubic-inches", "cups", "cubic-feet", "gallons", "dog"]
   
   function valuechanges(e) {
     setResult('')

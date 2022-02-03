@@ -92,7 +92,7 @@ function FarhenheitCelsiusConversion(farhn) {
 }
 
 function FahrenheitRankineConversion(farhn) {
-    return  farhn + 459.67
+    return  (parseFloat(farhn) + parseFloat(459.67)).toFixed(2);
 }
 
 function RankineKelvinConversion(rakine) {
