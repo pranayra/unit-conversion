@@ -5,7 +5,7 @@ function convertUnits(sourceUnit,targetUnit, sourceValue) {
         'kelvin-fahrenheit': kelvinFahrenheitConversion,
         'kelvin-rankine': kelvinRankineConversion,
         'celsius-kelvin': CelsiuskelvinConversion,
-        'celsius-fahrenheit': CelsiusCelsiusConversion,
+        'celsius-fahrenheit': CelsiusFahrenheitConversion,
         'celsius-rankine': CelsiusRankineConversion,
         'fahrenheit-kelvin': FahrenheitkelvinConversion,
         'fahrenheit-celsius': FarhenheitCelsiusConversion,
@@ -62,7 +62,7 @@ function kelvinCelsiusConversion(kelvin) {
 }
 
 function kelvinFahrenheitConversion(kelvin) {
-    return 1.8*(kelvin - 273) + 32
+    return 1.8*(kelvin - 273.15) + 32
 }
 
 function kelvinRankineConversion(kelvin) {
@@ -73,12 +73,12 @@ function CelsiuskelvinConversion(celsius) {
     return  celsius + 273.15;
 }
 
-function CelsiusCelsiusConversion(celsius) {
-    return  celsius;
-}
-
 function CelsiusRankineConversion(celsius) {
     return  celsius * 9/5 + 491.67;
+}
+
+function CelsiusFahrenheitConversion(celsius) {
+    return  celsius * 9/5 + 32;
 }
 
 function FahrenheitkelvinConversion(farhn) {
